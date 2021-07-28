@@ -1,4 +1,4 @@
-# amadeus_scraper
+# Amadeus Fire AG scraper
 A tool to track the amount of listed positions and the market cap of AAD.DE
 
 The script allows to scrap the amount of listed positions, as indicated on the homepage of Amadeus Fire AG, along with the current market cap.
