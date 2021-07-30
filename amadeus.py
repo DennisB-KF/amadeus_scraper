@@ -1,14 +1,16 @@
+import datetime
+import csv
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
-import datetime
 import yahoo_fin.stock_info as si
-import csv
 
+
+weekday = datetime.datetime.today().weekday()
 now = datetime.datetime.now()
 date = now.strftime("%d/%m/%Y")
 
 with open('aad_data.csv') as file:
-    if date in file.read():
+    if weekday >= 5:
         pass
     else:
         html = urlopen('https://www.amadeus-fire.de/jobs-und-karriere/stellenangebote/')
